@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".GitActivity"></activity>
+        <activity android:name=".Main2Activity"></activity>
         <activity
             android:name=".ScrollingActivity2"
             android:label="@string/title_activity_scrolling2"
