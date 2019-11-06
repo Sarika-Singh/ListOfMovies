@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Movie_list">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+           <!--            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_bar_height"
+                android:fitsSystemWindows="true"
+                android:background="@drawable/abc"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/backdrop"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="238dp"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                    app:toolbarId="@+id/toolbar">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        app:layout_collapseMode="pin"
+                        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+            </com.google.android.material.appbar.AppBarLayout>
+-->
+              <ImageView
+                  android:id="@+id/backdrop"
+                  android:src="@mipmap/ic_launcher"
+                  android:layout_width="match_parent"
+                  android:layout_height="200dp"/>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="15dp"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="3dp"
+                android:layout_marginTop="150dp">
+
+                <ImageView
+                    android:id="@+id/poster"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/ic_launcher" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="250dp"
+                android:textSize="15dp"
+                android:id="@+id/name"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="movie_name" />
+            <TextView
+                android:layout_below="@+id/backdrop"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="200dp"
+                android:textSize="15dp"
+                android:id="@+id/date_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Release Date" />
+            <TextView
+                android:layout_below="@+id/date_label"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="200dp"
+                android:textSize="15dp"
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Release_Date" />
+
+            <TextView
+                android:layout_below="@+id/card"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="15dp"
+                android:id="@+id/Language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Language" />
+            <TextView
+                android:layout_below="@+id/Language"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="15dp"
+                android:id="@+id/lang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Language" />
+            <TextView
+                android:layout_below="@+id/card"
+                android:layout_toRightOf="@+id/Language"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="150dp"
+                android:textSize="15dp"
+                android:id="@+id/vote_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vote Count" />
+            <TextView
+                android:layout_below="@+id/vote_count"
+                android:layout_toRightOf="@+id/lang"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="150dp"
+                android:textSize="15dp"
+                android:id="@+id/vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vote Count" />
+
+
+            <View
+                android:layout_below="@+id/vote"
+                android:layout_marginTop="10dp"
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+            <TextView
+                android:layout_below="@+id/divider"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="15dp"
+                android:id="@+id/overview_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overview" />
+            <TextView
+                android:layout_below="@+id/overview_label"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="15dp"
+                android:id="@+id/overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overview" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
